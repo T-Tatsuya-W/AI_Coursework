@@ -1,16 +1,10 @@
 # AI_Coursework
+link to the **🍄 data**: https://archive.ics.uci.edu/ml/machine-learning-databases/mushroom/
 
+useful file: the **extended** one. It has not just first letters of attribute values, but them in full words => easier for us to read.
 
-`git pull` to update your git repo copy to the most recent changes.
+file to be used in training: agaricus-lepiota ----- the Data one
 
+agaricus-lepiota ----- the Names one; contains credits and **some logical rules for the mushroom data sets**. Will be useful when checking if our AI is coming to right conclusions.
 
-once done adding things,
-`git status` to check what you need to do
-
-
-## to save your work
-`git add .` which will add all your changes 
-
-`git commit -m"add a message"` the message should briefly explain your changes
-
-`git push` to push all your changes to the git repo.
+*Note: OR we can set those as initial guidelines if this is something we know how to do* :)
