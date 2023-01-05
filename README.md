@@ -33,7 +33,5 @@ Currently wokings.ipynb will do this:
 - removes redundant attribute 'veil-type'
 - replaces `'?'` with `NaN` for correct null detection
 - removes attribute with null values
-
 - Transforms data into numerical values.
-
-the clean dataset `cleanDataset` now only contains integer values, and has a shape of $(8416, 100)$
+- splits data into `X_train`, `X_test`, `y_train`, `y_test` with variable ratios of train:test
