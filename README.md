@@ -28,10 +28,9 @@ the helpsheet from DurHack
 the notebook used for rough workings
 Currently wokings.ipynb will do this:
 - load the dataset (extended version) into Pandas DF `dataset`
-- outputs the shape of `dataset`
-- it prints counts of all the unique values from each attribute, as well as a count of null `NaN` values. 
+- creates count graphs for each attribute
 - removes redundant attribute 'veil-type'
 - replaces `'?'` with `NaN` for correct null detection
 - removes attribute with null values
-- Transforms data into numerical values.
+- Transforms data into numerical (values now in DF `cleanDataset`)
 - splits data into `X_train`, `X_test`, `y_train`, `y_test` with variable ratios of train:test
