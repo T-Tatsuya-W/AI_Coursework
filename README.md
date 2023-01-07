@@ -32,7 +32,7 @@ Currently wokings.ipynb will do this:
 - removes redundant attribute 'veil-type'
 - replaces `'?'` with `NaN` for correct null detection
 - removes attribute with null values
-- performs a $chi^2$ test on each attribute with edibility (concluding that no attribute is independent of edibility)
+- performs a $\chi^2$ test on each attribute with edibility (concluding that no attribute is independent of edibility)
 - creates cross tabulations between each attribute and edibility 
 - Transforms data into numerical values.
 - dataset `cleanDataset` contains only integer values, and has a shape of $(8416, 100)$
