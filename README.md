@@ -28,13 +28,17 @@ the helpsheet from DurHack
 the notebook used for rough workings
 Currently wokings.ipynb will do this:
 - load the dataset (extended version) into Pandas DF `dataset`
-- outputs the shape of `dataset`
-- it prints counts of all the unique values from each attribute, as well as a count of null `NaN` values. 
+- creates count graphs for each attribute
 - removes redundant attribute 'veil-type'
 - replaces `'?'` with `NaN` for correct null detection
 - removes attribute with null values
+<<<<<<< HEAD
 - performs a $chi^2$ test on each attribute with edibility (concluding that no attribute is independent of edibility)
 - creates cross tabulations between each attribute and edibility 
 - Transforms data into numerical values.
 
 the clean dataset `cleanDataset` now only contains integer values, and has a shape of $(8416, 100)$
+=======
+- Transforms data into numerical (values now in DF `cleanDataset`)
+- splits data into `X_train`, `X_test`, `y_train`, `y_test` with variable ratios of train:test
+>>>>>>> 9cbeb135ee437a0ded617153a170292defa7a9ce
