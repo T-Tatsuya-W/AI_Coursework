@@ -28,12 +28,21 @@ the helpsheet from DurHack
 the notebook used for rough workings
 Currently wokings.ipynb will do this:
 - load the dataset (extended version) into Pandas DF `dataset`
-- outputs the shape of `dataset`
-- it prints counts of all the unique values from each attribute, as well as a count of null `NaN` values. 
+- creates count graphs for each attribute
 - removes redundant attribute 'veil-type'
 - replaces `'?'` with `NaN` for correct null detection
 - removes attribute with null values
-
+- performs a $\chi^2$ test on each attribute with edibility (concluding that no attribute is independent of edibility)
+- creates cross tabulations between each attribute and edibility 
 - Transforms data into numerical values.
+- dataset `cleanDataset` contains only integer values, and has a shape of $(8416, 100)$
+- Transforms data into numerical (values now in DF `cleanDataset`)
+- Splits cleanDataset into X and y
+- Performs PCA calculations on X to determine most useful attributes
+- reduces X to a variable number of the most helpful attributes (10)
+- splits data into `X_train`, `X_test`, `y_train`, `y_test` with variable ratios of train:test
+- shuffles X and y so they can be used for Cross validation
 
-the clean dataset `cleanDataset` now only contains integer values, and has a shape of $(8416, 100)$
+- Copy of the logistic regression code from the slides
+
+- K-nearest in a callable function using the X_train, y_train variables

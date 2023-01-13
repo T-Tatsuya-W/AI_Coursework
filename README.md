@@ -37,4 +37,12 @@ Currently wokings.ipynb will do this:
 - Transforms data into numerical values.
 - dataset `cleanDataset` contains only integer values, and has a shape of $(8416, 100)$
 - Transforms data into numerical (values now in DF `cleanDataset`)
+- Splits cleanDataset into X and y
+- Performs PCA calculations on X to determine most useful attributes
+- reduces X to a variable number of the most helpful attributes (10)
 - splits data into `X_train`, `X_test`, `y_train`, `y_test` with variable ratios of train:test
+- shuffles X and y so they can be used for Cross validation
+
+- Copy of the logistic regression code from the slides
+
+- K-nearest in a callable function using the X_train, y_train variables
