@@ -24,9 +24,9 @@ agaricus-lepiota ----- the Names one; contains credits and **some logical rules 
 the helpsheet from DurHack
 
 
-### `workings.ipynb`
+### `main_code.ipynb`
 the notebook used for rough workings
-Currently wokings.ipynb will do this:
+Currently main_code.ipynb will do this:
 - load the dataset (extended version) into Pandas DF `dataset`
 - creates count graphs for each attribute
 - removes redundant attribute 'veil-type'
